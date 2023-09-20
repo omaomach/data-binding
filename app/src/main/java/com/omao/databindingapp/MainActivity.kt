@@ -1,5 +1,4 @@
 package com.omao.databindingapp
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
@@ -13,11 +12,10 @@ class MainActivity : AppCompatActivity() {
 
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
+        var user1 = User(1, "Omao", "joash")
+
         binding.apply {
-            btn.setOnClickListener() {
-                var enteredText: String = editText.text.toString()
-                textView.setText("Hello $enteredText")
-            }
+            user = user1
         }
 
     }
