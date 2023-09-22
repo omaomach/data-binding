@@ -10,13 +10,13 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-
-        var user1 = User(1, "Omao", "joash")
-
-        binding.apply {
-            user = user1
-        }
+//        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+//
+//        var user1 = User(1, "Omao", "joash")
+//
+//        binding.apply {
+//            user = user1
+//        }
 
     }
 }
